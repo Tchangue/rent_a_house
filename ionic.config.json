@@ -1,0 +1,8 @@
+{
+  "name": "rentahouse",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "410d6205"
+}
