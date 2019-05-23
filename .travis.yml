@@ -10,7 +10,7 @@ script:
  - npm run lint
  - ionic cordova build browser
  - ionic cordova run browser
- - ionic serve
+ - ionic serve --devapp
  - npm run test
  - npm run e2e
 deploy:
