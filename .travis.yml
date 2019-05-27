@@ -17,6 +17,7 @@ before install:
   - npm install -g cordova
 install:
   - npm i
+  - mvn install
   - travis_wait mvn install
 before_script:
   - npm prune
