@@ -24,8 +24,8 @@ before_script:
  - npm prune
 script:
  - npm run lint
- - npm run test
- - npm run e2e
+ - npm run test 2>&1 | tee testLog.txt
+ - npm run e2e 2>&1 | tee e2eLog.txt
 deploy:
  provider: pages
  skip-cleanup: true
