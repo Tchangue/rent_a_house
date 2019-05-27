@@ -6,8 +6,19 @@ branches:
  - master
 addons:
  chrome: stable
+cache:
+ directories:
+  - node_modules
+notifications:
+ email: false
+before install:
+ - npm install -g npm@latest
+ - npm install -g ionic
+ - npm install -g cordova
+install:
+ - npm i
 before_script:
- - npm install -g ionic cordova
+ - npm prune
 script:
  - npm run lint
  - npm run test
