@@ -16,7 +16,7 @@ before install:
   - npm install -g ionic
   - npm install -g cordova
 install:
-  - travis wait
+  - travis_wait
   - npm i
 before_script:
   - npm prune
