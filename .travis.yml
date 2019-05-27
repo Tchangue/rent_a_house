@@ -15,9 +15,9 @@ before install:
   - npm install -g npm@latest
   - npm install -g ionic
   - npm install -g cordova
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 install:
   - npm i
-  - mvn install
   - travis_wait mvn install
 before_script:
   - npm prune
