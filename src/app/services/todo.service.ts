@@ -3,8 +3,7 @@ import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 import * as faker from 'faker';
-import {parseIntAutoRadix} from '@angular/common/src/i18n/format_number';
-import {NumberFormatStyle} from '@angular/common';
+
 
 export interface Todo {
     task: string;
@@ -32,9 +31,9 @@ export class TodoService {
         );
         for (let i = 0; i < 10; i++) {
             db.collection('todos').add({
-                    task: faker.lorem.sentence(Number('5'), Number('10')),
-                    priority: faker.random.number(10),
-                    createdAt: faker.date.past(2).getTime()
+                task: faker.lorem.sentence(Number('5'), Number('10')),
+                priority: faker.random.number(10),
+                createdAt: faker.date.past(2).getTime()
             });
         }
     }
