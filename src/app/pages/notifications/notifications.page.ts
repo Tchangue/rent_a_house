@@ -12,8 +12,8 @@ export class NotificationsPage implements OnInit {
       'Messages (new message)',
       'Messages (new request)',
       'Saved/Marked contacts',
-      'App updates',
-  ]
+      'App updates'
+  ];
   constructor() { }
 
   ngOnInit() {
