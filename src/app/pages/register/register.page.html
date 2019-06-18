@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating" required="">Email</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" required="">Password</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-button expand="block" padding="30cm">Register with facebook</ion-button>
+  <ion-button expand="block" padding="10cm">Register with Google</ion-button>
+  <ion-button routerLink="/register"  expand="block" secondary padding>Create Account</ion-button>
+</ion-content>

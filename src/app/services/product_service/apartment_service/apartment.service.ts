@@ -3,7 +3,7 @@ import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 import * as faker from 'faker';
-import {Apartment} from '../../appartment_model/apartment';
+
 
 export interface Apartment {
     image: string;

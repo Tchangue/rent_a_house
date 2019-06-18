@@ -3,15 +3,15 @@ import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 import * as faker from 'faker';
-import {Product} from '../../models/product_model/product';
-import {Apartment} from '../../models/product_model/appartment_model/apartment';
+// import {Product} from '../../models/product_model/product';
+// import {Apartment} from '../../models/product_model/appartment_model/apartment';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-    private productsCollection: AngularFirestoreCollection<Product>;
+    /*private productsCollection: AngularFirestoreCollection<Product>;
     private products: Observable<Product[]>;
   constructor(db: AngularFirestore) {
       this.productsCollection = db.collection<Product>('products');
@@ -55,5 +55,5 @@ export class ProductService {
 
     removeProduct(id) {
         return this.productsCollection.doc<Product>(id).delete();
-    }
+    } */
 }
