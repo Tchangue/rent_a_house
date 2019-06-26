@@ -32,3 +32,5 @@ deploy:
   keep-history: true
   on:
     branch: master
+
+# Not to forget: local_dir: www
