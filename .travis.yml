@@ -1,36 +1,18 @@
 language: node_js
 node_js:
-  - 8.11.3
+ — “8.11.3”
 branches:
-  only:
-    - master
-addons:
-  chrome: stable
-cache:
-  directories:
-    - node_modules
-notifications:
-  email: false
-before install:
-  - npm install -g npm@latest
-  - npm install -g ionic
-  - npm install -g cordova
-install:
-  - travis_wait
-  - npm i
+ only:
+ — master
 before_script:
-  - npm prune
-  - export CHROME_BIN=chromium-browser
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
+ — npm install -g ionic cordova
 script:
-  - npm run lint
+ — ionic cordova build browser — prod
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $RAH_TOKEN
-  keep-history: true
-  on:
-    branch: master
-
-# Not to forget: local_dir: www
+ provider: pages
+ skip-cleanup: true
+ github-token: ffc7299fb502ca3642f739128a7a39a665ce8f6a
+ keep-history: true
+ on:
+   branch: master
+ local_dir: www
