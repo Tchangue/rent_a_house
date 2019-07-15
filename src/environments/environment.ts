@@ -12,7 +12,8 @@ export const environment = {
         storageBucket: 'rentahouse-11902.appspot.com',
         messagingSenderId: '450864551131',
         appId: '1:450864551131:web:43970f0094d10d23'
-    }
+    },
+    webAppKey: '450864551131-phekcjcp6bipl2b8hr7vp4enm3if1j60.apps.googleusercontent.com'
 };
 
 /*

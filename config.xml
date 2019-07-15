@@ -87,4 +87,7 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^4.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <plugin name="cordova-plugin-x-socialsharing" spec="^5.4.6" />
+    <plugin name="cordova-plugin-googleplus" spec="^7.0.2">
+        <variable name="WEB_APPLICATION_CLIENT_ID" value="450864551131-phekcjcp6bipl2b8hr7vp4enm3if1j60.apps.googleusercontent.com" />
+    </plugin>
 </widget>

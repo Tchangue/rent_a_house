@@ -8,7 +8,22 @@
 </ion-header>
 
 <ion-content>
-    <ion-item>
+    <div *ngIf="(user | async) ||{} as user">
+        <button ion-button
+                *ngIf="!user.uid"
+                (tap)="googleLogin()">
+            Login with Google
+        </button>
+    </div>
+    <div *ngIf="user.uid">
+        You're already logged in with UID: {{ user.uid }}
+        <button ion-button
+                (tap)="signOut()">
+            Sign out
+        </button>
+    </div>
+
+    <!--<ion-item>
         <ion-label position="floating" required="">Email</ion-label>
         <ion-input></ion-input>
     </ion-item>
@@ -19,7 +34,7 @@
     <ion-button expand="block" class="ion-text-center" primary padding="10cm">Login</ion-button>
     <ion-skeleton-text class="ion-text-center">Or</ion-skeleton-text>
     <ion-button expand="block" padding="30cm">Login with facebook</ion-button>
-    <ion-button expand="block" padding="10cm">Login with Google</ion-button>
+    <ion-button expand="block" padding="10cm" (click)="doGoogleLogin()">Login with Google</ion-button>
     <ion-list-header class="ion-text-center">Any account?</ion-list-header>
-    <ion-button routerLink="/register"  expand="block" secondary padding>Register</ion-button>
+    <ion-button routerLink="/register"  expand="block" secondary padding>Register</ion-button>-->
 </ion-content>

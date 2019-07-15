@@ -18,9 +18,10 @@ const routes: Routes = [
   { path: 'notifications', loadChildren: './pages/notifications/notifications.module#NotificationsPageModule' },
   { path: 'gcu', loadChildren: './pages/gcu/gcu.module#GcuPageModule' },
   { path: 'feedback', loadChildren: './pages/feedback/feedback.module#FeedbackPageModule' },
-  { path: 'profil', loadChildren: './pages/profil/profil.module#ProfilPageModule' },  { path: 'language', loadChildren: './pages/language/language.module#LanguagePageModule' },
+  { path: 'profil', loadChildren: './pages/profil/profil.module#ProfilPageModule' },
+  { path: 'language', loadChildren: './pages/language/language.module#LanguagePageModule' },
   { path: 'data-protection', loadChildren: './pages/data-protection/data-protection.module#DataProtectionPageModule' },
-  { path: 'register', loadChildren: './pages/register/register.module#RegisterPageModule' }
+  { path: 'register', loadChildren: './pages/register/register.module#RegisterPageModule' },
 
 
 
